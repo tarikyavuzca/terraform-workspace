@@ -22,11 +22,16 @@ provider "aws" {
 resource "aws_instance" "tf-ec2" {
   ami           = "ami-006dcf34c09e50022"
   instance_type = "t2.micro"
+  key_name = "firstkey"
   tags = {
-    "Name" = "created-by-tf"
+    "Name" = "ts-ec2"
   }
 }
 
 
 
 
+resource "aws_s3_bucket" "tf-s3" {
+  # must be unique
+  bucket = "ytd-test-s3-bucket"
+}
