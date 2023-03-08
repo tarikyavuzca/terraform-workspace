@@ -29,5 +29,4 @@ resource "aws_instance" "tf-ec2" {
 
 
 
-# check aws to see newly created ec2 instance by terraform
 

@@ -9,7 +9,6 @@ sudo yum update -y
 sudo yum install -y yum-utils
 sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
 sudo yum -y install terraform
-terraform version
 */
 
 # create an IAM role in aws console (AmazonEC2FullAccess) and modify for EC2 instance
